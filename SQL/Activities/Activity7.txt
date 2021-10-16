@@ -1,0 +1,14 @@
+
+select sum(order_total) purchase from OE.orders;
+
+-- Write an SQL statement to find the average purchase amount of all orders.
+select AVG(order_total) AS "Average" from OE.orders;
+
+-- Write an SQL statement to get the maximum purchase amount of all the orders.
+select MAX(order_total) AS "Maximum" from OE.orders;
+
+-- Write an SQL statement to get the minimum purchase amount of all the orders.
+select MIN(order_total) AS "Minumum" from OE.orders;
+
+-- Write an SQL statement to find the number of salesmen listed in the table.
+select COUNT(distinct SALES_REP_ID	) AS "Total count" from OE.orders;
